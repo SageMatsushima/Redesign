@@ -1,94 +1,90 @@
 <!doctype html>
 
 <html>
-  <head>
-    <title>Redesign</title>
-    <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-  </head>
 
-  <body>
-    <h1>Redesign Website</h1>
+<head>
+	<title>Redesign</title>
+	<link rel="stylesheet" href="index.css">
+	<!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
 
-		<h2 class="context">Context</h2>
-		<p>
-			During my sophomore fall semester at Brown, my UI/UX class assigned us a project: pick a website that
-			was accessible to the public but could be redesigned to decrease usability. 
-				</p>
+<body>
+	<h1>Redesign Website</h1>
 
-		<h2>Problems:</h2>
-		<img src="Infographic.jpg" class="graphic" alt="Infographic of the problems in the original" />
-		<p>
-			This website blurs the line between the images placed and the actual buttons 
-tacky
-			the address of the cafe is not next to the directions, harder to find. Not a cohesive layout; the important information is scattered throughout the page:
-			the nav bar is not in a traditional place and is hard to see, the photos are unappealing and scattered, the font is small and hard to read, the color scheme is unappealing, and it feels dated as well
+	<h2 class="context">Context</h2>
+	<p>
+		During my sophomore fall semester at Brown, my UI/UX class assigned us a project: pick a website that
+		was accessible to the public but could be redesigned to decrease usability.
+	</p>
 
-			learnability: hard to learn. even if you know where the nav bar is, the pictures on the home page you can't click on the names for the food, yo uhave to click a small button in the lower right-hand corner.
-			The nav bar is also confusing because the footer is missing the menu so you have to understand that it doens't have all the components. 
-		</p>
+	<h2>Research:</h2>
+	<!-- <img src="Infographic.jpg" class="graphic" alt="Infographic of the problems in the original" /> -->
 
-		
+	<h4>Useability</h4>
+	<p>
+		The website does not have a cohesive layout; the important information is scattered throughout the page in
+		random dividers varying in size. The nav bar is also confusing because it's not in a traditional places usually
+		seen in websites. Additionally,the footer is missing the "menu" link and doesn't have all the components in the
+		nav bar. The photos are unappealing and scattered, the font is too small and has some inconsistent spacing so
+		its hard to read making the site even more harder to use. Overall, it feels dated and the layout of the buttons
+		and the pictures makes the website hard to use and navigate.
+	</p>
+
+	<h4>Learnability</h4>
+	<p>
+		This website is incredibly hard to learn. The small buttons in the lower right hand corners
+		all lead to the menu; however, it's really hard to even see at first glance. Plus. the hit boxes are only set to
+		be the small buttons so the user has to learn that they can't just click the picture itself. These small
+		inconsistent details make the website confusing and unappealing.
+	</p>
+
+	<h4>Memorability</h4>
+	<p>
+		Overall, this page is very forgettable. There is nothing either interface-wise or even
+		graphic-wise that stands out or makes the user want to come back to the site more than once. In fact, the
+		website might actually make the cafe more unappealing and unappetizing due to the crude pictures and the
+		disregard for the appearance. This can potentially hurt business sales due to the first impressions and make the
+		restaurant feel as if they don't care.
+	</p>
+
+	<h2>Accessibility</h2>
+	<p>
+		Using <a href="https://wave.webaim.org/" target="_blank">WebAIM WAVE</a>, a website that reads a website and
+		tells the programer any accessibility concerns, the program detected multiple errors both in the code and
+		structural issues. For instance, there is 8 redundant links to the menu, no alternative text for users that see
+		the pictures on their computer, and text that was barely visible due to poor contrast between the two colors.
+		Additionally, there were many instances of large text blocks and the page itself has no structure at all.
+		Because of these factors, I believe that the website could be redesigned to better optimize the structure and
+		information on the page to help user accessibility.
+	</p>
 
 
-		<h2>Designs</h2>
-		<h4>Empathy Map: Working Wendy</h4>
-		<div class="imagebox">
-			<div class="image" style="display: inline-block">
-				<img src="Personas1.jpg" class="image2" alt="Empathy map of Working Wendy" />
-			</div>
-			<div class="text" style="display: inline-block; word-wrap: break-word">
-				<p>
-					The user is a mother of 4 children who uses the washing machine on a regular basis. They are used to the options
-					and therefore rarely get frustrated; they know the exact button to use for each type of clothes and which to avoid
-					entirely.<br />
-					<br />
+	<h2>Designs</h2>
+	<h3>Low-fidelity Wireframes</h3>
+	<div class="lofi" style="display: inline-block">
+		<img src="Personas1.jpg" class="image2" alt="Empathy map of Working Wendy" />
+	</div>
+	<p>
+		These three pictures depict the three types of low-fi wireframes that I had planned for the website. All three
+		show the major types dimensions of screens today: laptop, tablet, and phone dimensions. Furthermore, I tried to
+		address the main issues with the original site: contrast, layout, readability, and accessability for each link.
+	</p>
 
-					This mother admitted that although she knows which options to choose for certain clothes, there are just way too
-					many and most remain unused. In fact, she states that even she doesn’t know what most of the functions do and will
-					stick to the options that are understood easier. <br />
-					<br />
-					This mother represents the users that are familiar to the machine and its options yet still confused about the
-					excessive options and their functions. However, these users still accept that they will never understand and
-					proceed to do their daily jobs.
-				</p>
-			</div>
-		</div>
+	<h3>High-fidelity Prototype</h3>
+	<div class="image" style="display: inline-block">
+		<img src="Personas1.jpg" class="image2" alt="Empathy map of Working Wendy" />
+	</div>
+	<p>
+		Using my lo-fi sketches, I translated it into HTML and CSS to create a new, more refined website for the cafe.
+		<br>
+		The link to the final website can be found <a href="redesign.html" target="_blank">here</a>
+	</p>
 
-		<h4>Empathy Map: Working Bewildered Brian</h4>
-		<div class="imagebox2">
-			<div class="image" style="display: inline-block">
-				<img src="Personas2.jpg" class="image3" alt="Empathy map of Bewildered Brian" />
-			</div>
-			<div class="text" style="display: inline-block; word-wrap: break-word">
-				<p>
-					This user is a new college grad coming back from school. The user is not new to the washing machine but is rather
-					unfamiliar with all of its components and the model itself. They are unsure of each button pressed and the
-					consequences/outcomes of each option.<br />
-					<br />
-					the user is a fairly new user puzzled by the machine and its options. He is unsure about almost all his decisions
-					and questions if he has inputted the correct options for his wash. In the end, he gets increasingly frustrated with
-					his confusion which pushes him to give up.
-					<br />
-					<br />
-					This user represents the users unfamiliar with the functions of the machine and its choices. As a result, the users
-					will typically walk away in frustration or start the machine to end the confusion.
-				</p>
-			</div>
-		</div>
+	<h2>Takeaways</h2>
+	<p class="ending">
+		From this project, I have learned that
+	</p>
+</body>
 
-		<h2>Storyboard</h2>
-		<h3>Bewildered Brian</h3>
-		<img src="Storyboard.jpg" class="storyboard" alt="Storyboard" width="1150" height="1350" />
-
-		<h2>Takeaways</h2>
-		<p class="ending">
-			From this project, I have learned that over-complicating interfaces with every option can confuse users and distract
-			them from their initial task. Interfaces should be a streamlined design that helps the user quickly access information
-			without confusion from a quick scan. Additionally, I have learned how to effectively collect data and turn it into
-			useful information about the users and their interactions with interfaces.
-		</p>
-	</body>
-  </body>
 </html>
