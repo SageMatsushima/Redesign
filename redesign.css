@@ -2,7 +2,9 @@ body {
 	margin: 0;
 	padding: 0;
 	display: grid;
-	grid-template-rows: 10vh 1fr 120fr 5fr;
+	grid-template-rows: 14vh 70vh 120fr 5fr;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: 3vh;
 }
 
 nav {
@@ -10,12 +12,19 @@ nav {
 	grid-row: 1;
 }
 
-.image2 {
-	background-color: teal;
+.image {
 	grid-row: 2;
 }
 
+.image2 {
+	background-color: black;
+	position: center;
+	max-width: 1000vw;
+	max-height: 2000vh;
+}
+
 .content {
+	position: relative;
 	background-color: salmon;
 	grid-row: 3;
 }
@@ -32,23 +41,6 @@ footer {
 	text-align: center;
 }
 
-ul {
-	list-style-type: none;
-	overflow: hidden;
-	background-color: #333;
-	border-bottom: 2vh red;
-}
-
-li a {
-	float: right;
-	font-size: 1.5vw;
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 2vw 2vw;
-	text-decoration: none;
-}
-
 .title {
 	color: white;
 	float: left;
@@ -59,9 +51,24 @@ li a {
 	text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+ul {
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #333;
+}
+
 li a:hover {
 	background-color: #111;
+}
+
+li a {
+	float: right;
+	font-size: 1.5vw;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 2vw 2vw;
+	text-decoration: none;
 }
 
 .hours {
@@ -97,5 +104,5 @@ td {
 }
 
 .n {
-	size: 20vw;
+	font-size: 20vw;
 }

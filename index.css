@@ -7,6 +7,10 @@
 	margin-right: 3.5vw;
 }
 
+.link {
+	margin: 0;
+}
+
 h1 {
 	text-align: center;
 	font-size: 2.5vw;
@@ -25,8 +29,8 @@ h2 {
 	padding-top: 5%;
 }
 
-h4 {
-	padding-top: 0%;
+h3 {
+	padding-top: 2%;
 }
 
 .image1 {
