@@ -1,15 +1,46 @@
 body {
-	margin: 0;
-	padding: 0;
+	margin: 0%;
+	padding: 0%;
 	display: grid;
-	grid-template-rows: 14vh 70vh 120fr 5fr;
+	grid-template-rows: 10vh 70vh 260vh 5vh;
 	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 	font-size: 3vh;
 }
 
 nav {
-	background-color: #333;
+	background-color: rgb(153, 41, 41);
 	grid-row: 1;
+	padding: 0%;
+	margin: 0%;
+}
+
+.title {
+	color: white;
+	float: left;
+	text-align: center;
+	font-size: 150%;
+	padding-left: 5vw;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	background-color: rgb(153, 41, 41);
+}
+
+li a:hover {
+	background-color: rgb(107, 32, 32);
+}
+
+li a {
+	float: right;
+	font-size: 1.5vw;
+	display: block;
+	color: white;
+	text-align: center;
+	padding-right: 2vw;
+	padding-left: 2vw;
+	text-decoration: none;
 }
 
 .image {
@@ -25,56 +56,49 @@ nav {
 
 .content {
 	position: relative;
-	background-color: salmon;
+	background-color: rgb(230, 207, 172);
 	grid-row: 3;
+	border-top: 0.5vw solid rgb(153, 41, 41);
 }
 
-footer {
-	background-color: slateblue;
-	/* position: fixed; */
-	grid-row: 4;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	/* height: 10%; */
-	color: white;
-	text-align: center;
+.first {
+	/* background-color: darkmagenta; */
+	margin-left: 7vw;
+	margin-top: 3vh;
+	width: 83vw;
+	height: 73vh;
+	display: inline-flex;
+	border-bottom: 0.5vw solid rgb(153, 41, 41);
 }
 
-.title {
-	color: white;
-	float: left;
-	text-align: center;
-	font-size: 250%;
-	padding-left: 12vw;
-	padding-top: 1%;
-	text-decoration: none;
+.left {
+	/* background-color: red; */
+	margin-left: 2vw;
+	margin-top: 3vh;
+	width: 40vw;
+	height: 60vh;
+	display: inline-flex;
 }
 
-ul {
-	list-style-type: none;
-	overflow: hidden;
-	background-color: #333;
+.right {
+	/* background-color: darkgreen; */
+	width: 20%;
+	text-align: left;
+	width: 40vw;
+	padding-top: 10vh;
+	padding-left: 7vw;
+	font-size: 3.5vh;
 }
 
-li a:hover {
-	background-color: #111;
-}
-
-li a {
-	float: right;
-	font-size: 1.5vw;
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 2vw 2vw;
-	text-decoration: none;
+.story {
+	font-size: 500%;
 }
 
 .hours {
 	width: 35vw;
 	height: 60vh;
-	margin: 10vw;
+	margin-top: 7vw;
+	margin-left: 7vw;
 }
 
 .info {
@@ -90,19 +114,24 @@ th {
 	font-size: 2.5vw;
 }
 
-.time {
-	text-align: right;
-	width: 20vw;
-	height: 20vw;
-	font-size: 1.5vw;
-}
-
 td {
 	font-size: 2vw;
 	padding-left: 5vw;
 	padding-top: 2vh;
 }
 
-.n {
+.time {
 	font-size: 20vw;
+}
+
+footer {
+	background-color: rgb(153, 41, 41);
+	position: fixed;
+	grid-row: 4;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	/* height: 10%; */
+	color: white;
+	text-align: center;
 }
