@@ -2,7 +2,7 @@ body {
 	margin: 0%;
 	padding: 0%;
 	display: grid;
-	grid-template-rows: 10vh 70vh 260vh 5vh;
+	grid-template-rows: 10vh 80vh 180vh 10vh;
 	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 	font-size: 3vh;
 }
@@ -43,11 +43,19 @@ li a {
 	text-decoration: none;
 }
 
-.image {
+.imagediv {
 	grid-row: 2;
+	background-color: rgb(107, 32, 32);
 }
 
-.image2 {
+.image {
+	position: relative;
+	margin-left: 10%;
+	margin-right: 10%;
+	display: block;
+}
+
+.image1 {
 	background-color: black;
 	position: center;
 	max-width: 1000vw;
@@ -66,7 +74,8 @@ li a {
 	margin-left: 7vw;
 	margin-top: 3vh;
 	width: 83vw;
-	height: 73vh;
+	height: 70vh;
+	margin-bottom: 0%;
 	display: inline-flex;
 	border-bottom: 0.5vw solid rgb(153, 41, 41);
 }
@@ -76,29 +85,31 @@ li a {
 	margin-left: 2vw;
 	margin-top: 3vh;
 	width: 40vw;
-	height: 60vh;
+	height: 55vh;
 	display: inline-flex;
 }
 
 .right {
-	/* background-color: darkgreen; */
 	width: 20%;
+	height: 50vh;
 	text-align: left;
 	width: 40vw;
 	padding-top: 10vh;
-	padding-left: 7vw;
 	font-size: 3.5vh;
 }
 
 .story {
-	font-size: 500%;
+	font-size: 6vw;
+	padding-top: 2vw;
 }
 
 .hours {
-	width: 35vw;
-	height: 60vh;
-	margin-top: 7vw;
-	margin-left: 7vw;
+	display: inline-flex;
+	/* margin-left: 7vw; */
+	margin-right: 7vw;
+	margin-top: 3vh;
+	width: 38vw;
+	height: 70vh;
 }
 
 .info {
@@ -110,18 +121,81 @@ li a {
 
 th {
 	text-align: center;
-	padding-left: 3vw;
-	font-size: 2.5vw;
+	height: 7vh;
+	padding-left: 13vw;
+	font-size: 3.5vw;
 }
 
 td {
-	font-size: 2vw;
-	padding-left: 5vw;
+	font-size: 1.5vw;
+	margin: 0%;
 	padding-top: 2vh;
 }
 
 .time {
 	font-size: 20vw;
+}
+
+.second {
+	display: inline-flex;
+	margin-left: 7vw;
+	margin-right: 7vw;
+	margin-top: 3vh;
+	/* border-bottom: 0.5vw solid rgb(153, 41, 41); */
+}
+
+.address {
+	font-size: 2vw;
+	text-align: center;
+	width: 38vw;
+	height: 40vh;
+	padding-top: 0%;
+}
+
+.map {
+	width: 44vw;
+	height: 78vh;
+	margin-top: 3vh;
+	border: 0.5vw solid rgb(153, 41, 41);
+}
+
+h2 {
+	height: 7vh;
+	font-size: 3.5vw;
+	text-align: center;
+	margin: 2.5vh;
+}
+
+.third {
+	width: 83vw;
+	height: 70vh;
+	margin-left: 7vw;
+	margin-right: 7vw;
+	margin-top: 3vh;
+}
+
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa-yelp {
+	background: rgb(107, 32, 32);
+	color: white;
+}
+
+.fa-instagram {
+	background: rgb(107, 32, 32);
+	color: white;
 }
 
 footer {
@@ -131,7 +205,7 @@ footer {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	/* height: 10%; */
+	height: 10vh;
 	color: white;
 	text-align: center;
 }

@@ -5,23 +5,49 @@
 <head>
 	<title>Redesign</title>
 	<link rel="stylesheet" href="redesign.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<script language="javascript" type="text/javascript">
+		var timerid = 0;
+		var images = new Array("img6.jpg",
+			"img1.jpg",
+			"img2.jpg");
+		var countimages = 0;
+		function startTime() {
+			if (timerid) {
+				timerid = 0;
+			}
+			var tDate = new Date();
+
+			if (countimages == images.length) {
+				countimages = 0;
+			}
+			if (tDate.getSeconds() % 5 == 0) {
+				document.getElementById("image1").src = images[countimages];
+			}
+			countimages++;
+
+			timerid = setTimeout("startTime()", 1000);
+		}
+	</script>
 </head>
 
-<body>
+<body onload="startTime();">
 	<nav class="nav">
 		<ul>
-			<li><a href="contact.asp">Contact</a></li>
-			<li><a href="about.asp">About</a></li>
-			<li><a href="menu.asp">Menu</a></li>
-			<li><a href="default.asp">Home</a></li>
+			<li><a href="http://www.cafecup-hb.com/Contact%20Us.htm" target="_blank">Contact</a></li>
+			<li><a href="redesign.html" target="_blank">About</a></li>
+			<li><a href="http://www.cafecup-hb.com/Menus/Griddled%20and%20Good.htm" target="_blank">Menu</a></li>
+			<li><a href="default.asp" target="_blank">Home</a></li>
 			<li class="title"><a href="redesign.html" target="_blank">Cafe Cup</a></li>
 		</ul>
 	</nav>
 
-	<div class="image">
-		<img src="img1.jpg" class="image2" alt="picture of food" />
+	<div class="imagediv">
+		<div class="image">
+			<a href="menu.asp"><img id="image1" src="img6.jpg" /></a>
+		</div>
 	</div>
 
 	<div class="content">
@@ -42,50 +68,59 @@
 			</div>
 		</div>
 
-		<div class="second" style="background-color: royalblue;">
-			<div class="hours" style="background-color: tomato;">
+		<div class="second">
+			<div class=" address">
+				<h2>Location</h2>
+				<p>
+					5930 Warner Avenue <br>
+					Huntington Beach, California 92649<br>
+					(714) 840-8991
+				</p>
 				<table class="time">
 					<tr>
-						<th>Hours</th>
+						<th class="hrs">Hours</th>
 					</tr>
 					<tr>
 						<td>Monday</td>
-						<td>7am - 2pm</td>
+						<td class="times">7am - 2pm</td>
 					</tr>
 					<tr>
 						<td>Tuesday</td>
-						<td>7am - 2pm</td>
+						<td class="times">7am - 2pm</td>
 					</tr>
 					<tr>
 						<td>Wednesday</td>
-						<td>7am - 2pm</td>
+						<td class="times">7am - 2pm</td>
 					</tr>
 					<tr>
 						<td>Thursday</td>
-						<td>7am - 2pm</td>
+						<td class="times">7am - 2pm</td>
 					</tr>
 					<tr>
 						<td>Friday</td>
-						<td>7am - 2pm</td>
+						<td class="times">7am - 2pm</td>
 					</tr>
 					<tr>
 						<td>Saturday</td>
-						<td>7am - 3pm</td>
+						<td class="times">7am - 3pm</td>
 					</tr>
 					<tr>
 						<td>Sunday</td>
-						<td>7am - 3pm</td>
+						<td class="times">7am - 3pm</td>
 					</tr>
 				</table>
 			</div>
-			<div class="map" style="display: inline-block" style="background-color: hotpink;">
-				<img src="map.jpg" class="image1" alt="location of Cafe Cup" />
+			<div class="div">
+				<a href="https://www.google.com/maps/place/Cafe+Cup/@33.7148479,-118.0280074,15.7z/data=!4m5!3m4!1s0x80dd25d390441d5b:0x12c1e1ea60a8f08f!8m2!3d33.7144549!4d-118.0251363"
+					target="_blank">
+					<img src=" map.jpg" class="map" alt="location of Cafe Cup" /> </a>
 			</div>
 		</div>
-
-
 	</div>
-	<footer>footnote</footer>
+
+	<footer>
+		<a href="https://www.yelp.com/biz/cafe-cup-huntington-beach" class="fa fa-yelp" target="_blank"></a>
+		<a href="https://www.instagram.com/cafecup.hb/?hl=de" class="fa fa-instagram" target="_blank"></a></footer>
 </body>
 
 </html>
