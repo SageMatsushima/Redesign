@@ -10,39 +10,51 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<script language="javascript" type="text/javascript">
 		var timerid = 0;
-		var images = new Array("img6.jpg",
+		var images = new Array("img4.jpg",
+			"img3.jpg",
 			"img1.jpg",
 			"img2.jpg");
-		var countimages = 0;
+		var count = 0;
 		function startTime() {
 			if (timerid) {
 				timerid = 0;
 			}
-			var tDate = new Date();
+			var today = new Date();
 
-			if (countimages == images.length) {
-				countimages = 0;
+			if (count == images.length) {
+				count = 0;
 			}
-			if (tDate.getSeconds() % 5 == 0) {
-				document.getElementById("image1").src = images[countimages];
+			if (today.getSeconds() % 5 == 0) {
+				document.getElementById("image1").src = images[count];
 			}
-			countimages++;
+			count++;
 
 			timerid = setTimeout("startTime()", 1000);
+		}
+	</script>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
 		}
 	</script>
 </head>
 
 <body onload="startTime();">
-	<nav class="nav">
-		<ul>
-			<li><a href="http://www.cafecup-hb.com/Contact%20Us.htm" target="_blank">Contact</a></li>
-			<li><a href="redesign.html" target="_blank">About</a></li>
-			<li><a href="http://www.cafecup-hb.com/Menus/Griddled%20and%20Good.htm" target="_blank">Menu</a></li>
-			<li><a href="default.asp" target="_blank">Home</a></li>
-			<li class="title"><a href="redesign.html" target="_blank">Cafe Cup</a></li>
-		</ul>
-	</nav>
+
+	<div class="topnav" id="myTopnav">
+		<a href="http://www.cafecup-hb.com/Contact%20Us.htm" target="_blank" class="name">Contact</a></li>
+		<a href="redesign.html" target="_blank" class="names">About</a>
+		<a href="http://www.cafecup-hb.com/Menus/Griddled%20and%20Good.htm" target="_blank" class="names">Menu</a>
+		<a href="default.asp" target="_blank" class="names">Home</a>
+		<a href="redesign.html" target="_blank" class="title">Cafe Cup</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+
 
 	<div class="imagediv">
 		<div class="image">
@@ -69,13 +81,7 @@
 		</div>
 
 		<div class="second">
-			<div class=" address">
-				<h2>Location</h2>
-				<p>
-					5930 Warner Avenue <br>
-					Huntington Beach, California 92649<br>
-					(714) 840-8991
-				</p>
+			<div class="table">
 				<table class="time">
 					<tr>
 						<th class="hrs">Hours</th>
@@ -110,17 +116,29 @@
 					</tr>
 				</table>
 			</div>
-			<div class="div">
-				<a href="https://www.google.com/maps/place/Cafe+Cup/@33.7148479,-118.0280074,15.7z/data=!4m5!3m4!1s0x80dd25d390441d5b:0x12c1e1ea60a8f08f!8m2!3d33.7144549!4d-118.0251363"
-					target="_blank">
-					<img src=" map.jpg" class="map" alt="location of Cafe Cup" /> </a>
+			<div class=" address">
+				<h2>Location</h2>
+				<p>
+					<a href="https://www.google.com/maps/place/Cafe+Cup/@33.7148479,-118.0280074,15.7z/data=!4m5!3m4!1s0x80dd25d390441d5b:0x12c1e1ea60a8f08f!8m2!3d33.7144549!4d-118.0251363"
+						target="_blank">5930 Warner Avenue <br>
+						Huntington Beach, California 92649<br>
+						(714) 840-8991</a>
+				</p>
 			</div>
 		</div>
+		<div class="div">
+			<a href="https://www.google.com/maps/place/Cafe+Cup/@33.7148479,-118.0280074,15.7z/data=!4m5!3m4!1s0x80dd25d390441d5b:0x12c1e1ea60a8f08f!8m2!3d33.7144549!4d-118.0251363"
+				target="_blank">
+				<img src=" map.jpg" class="map" alt="location of Cafe Cup" /> </a>
+		</div>
+	</div>
 	</div>
 
 	<footer>
 		<a href="https://www.yelp.com/biz/cafe-cup-huntington-beach" class="fa fa-yelp" target="_blank"></a>
 		<a href="https://www.instagram.com/cafecup.hb/?hl=de" class="fa fa-instagram" target="_blank"></a></footer>
+
+
 </body>
 
 </html>

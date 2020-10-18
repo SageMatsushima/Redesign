@@ -2,24 +2,58 @@ body {
 	margin: 0%;
 	padding: 0%;
 	display: grid;
-	grid-template-rows: 10vh 80vh 180vh 10vh;
+	grid-template-rows: 10vh 80vh 200vh 10vh;
 	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 	font-size: 3vh;
 }
 
-nav {
+.topnav {
+	overflow: hidden;
 	background-color: rgb(153, 41, 41);
 	grid-row: 1;
-	padding: 0%;
-	margin: 0%;
+	width: 100%;
 }
 
+.topnav a {
+	float: right;
+	display: flex;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	position: relative;
+}
+
+.names {
+	font-size: 2vw;
+	position: relative;
+}
+
+.name {
+	font-size: 2vw;
+	position: relative;
+}
+
+.active {
+	color: white;
+}
+
+.topnav .icon {
+	display: none;
+}
+
+.topnav a:hover {
+	background-color: rgb(107, 32, 32);
+	color: white;
+}
 .title {
 	color: white;
 	float: left;
 	text-align: center;
+	margin-right: 10vw;
 	font-size: 150%;
 	padding-left: 5vw;
+	font-size: 3.5vw;
 	text-decoration: none;
 }
 
@@ -45,21 +79,26 @@ li a {
 
 .imagediv {
 	grid-row: 2;
+	width: 100%;
 	background-color: rgb(107, 32, 32);
+	position: relative;
+	overflow: hidden;
 }
 
 .image {
-	position: relative;
-	margin-left: 10%;
-	margin-right: 10%;
-	display: block;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	object-fit: contain;
 }
 
-.image1 {
-	background-color: black;
-	position: center;
-	max-width: 1000vw;
-	max-height: 2000vh;
+#image1 {
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .content {
@@ -70,7 +109,6 @@ li a {
 }
 
 .first {
-	/* background-color: darkmagenta; */
 	margin-left: 7vw;
 	margin-top: 3vh;
 	width: 83vw;
@@ -112,6 +150,14 @@ li a {
 	height: 70vh;
 }
 
+.hrs {
+	padding-left: 8vw;
+}
+
+.table {
+	margin-left: 3vw;
+}
+
 .info {
 	text-align: left;
 	font-size: 1.5vw;
@@ -122,7 +168,7 @@ li a {
 th {
 	text-align: center;
 	height: 7vh;
-	padding-left: 13vw;
+	padding-left: 10vw;
 	font-size: 3.5vw;
 }
 
@@ -141,29 +187,37 @@ td {
 	margin-left: 7vw;
 	margin-right: 7vw;
 	margin-top: 3vh;
-	/* border-bottom: 0.5vw solid rgb(153, 41, 41); */
+	height: 20vw;
 }
 
 .address {
 	font-size: 2vw;
 	text-align: center;
 	width: 38vw;
-	height: 40vh;
+	height: 30vh;
 	padding-top: 0%;
+	margin-left: 13vw;
 }
 
 .map {
 	width: 44vw;
-	height: 78vh;
-	margin-top: 3vh;
+	height: 100%;
+	/* margin-top: 3vh; */
+	float: right;
+	margin-right: 9vw;
 	border: 0.5vw solid rgb(153, 41, 41);
 }
 
 h2 {
-	height: 7vh;
+	height: 6vh;
 	font-size: 3.5vw;
 	text-align: center;
-	margin: 2.5vh;
+	margin: 2vw;
+	margin-bottom: 0%;
+}
+
+.table {
+	margin-top: 2vw;
 }
 
 .third {
@@ -208,4 +262,214 @@ footer {
 	height: 10vh;
 	color: white;
 	text-align: center;
+}
+
+@media (max-width: 800px) {
+	body {
+		margin: 0%;
+		padding: 0%;
+		display: grid;
+		grid-template-rows: 10vh 30vh 100vh 10vh;
+		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+		font-size: 3vh;
+	}
+
+	.topnav a:not(.title) {
+		display: none;
+	}
+
+	.title {
+		float: left;
+		margin-right: 32vw;
+		font-size: 7vw;
+	}
+
+	.topnav a.icon {
+		position: absolute;
+		float: right;
+		display: block;
+	}
+
+	.topnav.responsive {
+		position: relative;
+		float: right;
+		display: flex;
+		color: #f2f2f2;
+		text-align: center;
+		text-decoration: none;
+		position: relative;
+		width: 100%;
+	}
+
+	.topnav.responsive .icon {
+		position: absolute;
+		float: right;
+		top: 0;
+		margin: 0%;
+	}
+
+	.topnav.responsive a.title {
+		display: none;
+	}
+
+	.a.names {
+		float: right;
+	}
+
+	.a.name {
+		float: right;
+	}
+
+	.topnav.responsive a.names {
+		display: flex;
+		text-align: right;
+		position: relative;
+		margin-top: 2vw;
+		margin-left: 1vw;
+		font-size: 2.5vw;
+	}
+
+	.topnav.responsive a.name {
+		float: right;
+		display: flex;
+		text-align: right;
+		position: relative;
+		margin-top: 2vw;
+		margin-left: 7vw;
+		font-size: 2.5vw;
+	}
+
+	.first {
+		margin-left: 9vw;
+		width: 83vw;
+		height: 40vh;
+		margin-bottom: 0%;
+		border-bottom: 0.5vw solid rgb(153, 41, 41);
+	}
+
+	.left {
+		margin-left: 24vw;
+		margin-top: 0vh;
+		width: 40vw;
+		height: 10vh;
+		position: absolute;
+	}
+
+	.right {
+		margin-top: 10vh;
+		padding: 0%;
+		width: 83vw;
+		height: 30vh;
+		font-size: 2.5vh;
+		text-align: center;
+	}
+
+	td {
+		font-size: 2.5vw;
+		padding: 0%;
+	}
+
+	.table {
+		width: 40vw;
+	}
+
+	.times {
+		font-size: 2.5vw;
+	}
+
+	.second {
+		display: inline-flex;
+		margin-left: 7vw;
+		margin-right: 7vw;
+		margin-top: 3vh;
+	}
+
+	.address {
+		font-size: 2.5vw;
+		text-align: center;
+		width: 35vw;
+		height: 40vh;
+		margin-left: 1vh;
+	}
+
+	h2 {
+		height: 3vh;
+		font-size: 3.5vw;
+		text-align: center;
+	}
+
+	.div {
+		margin-top: 6vw;
+		float: right;
+	}
+}
+
+@media (max-width: 400px) {
+	body {
+		display: grid;
+		grid-template-rows: 10vh 30vh 85vh 5vh;
+	}
+
+	.title {
+		float: left;
+		margin-right: 27vw;
+		font-size: 7vw;
+	}
+
+	.topnav a.icon {
+		position: absolute;
+		float: right;
+		display: block;
+		font-size: 6vw;
+	}
+
+	.topnav.responsive a.names {
+		display: flex;
+		text-align: right;
+		position: relative;
+		margin-top: 2vw;
+		margin-left: 1vw;
+		font-size: 3.5vw;
+	}
+
+	.topnav.responsive a.name {
+		float: right;
+		display: flex;
+		text-align: right;
+		position: relative;
+		margin-top: 2vw;
+		margin-left: 15vw;
+		font-size: 3.5vw;
+	}
+
+	.first {
+		margin-left: 10vw;
+		width: 80vw;
+		height: 37vh;
+		margin-bottom: 0%;
+		border-bottom: 0.5vw solid rgb(153, 41, 41);
+	}
+
+	.left {
+		margin-left: 25vw;
+		margin-top: 0vh;
+		width: 40vw;
+		height: 10vh;
+		position: absolute;
+	}
+
+	.right {
+		margin-top: 7vh;
+		padding: 0%;
+		width: 83vw;
+		height: 30vh;
+		font-size: 2.25vh;
+		text-align: center;
+	}
+
+	.hrs {
+		padding-right: 0px;
+		height: 1vw;
+		padding-bottom: 1vw;
+	}
 }
