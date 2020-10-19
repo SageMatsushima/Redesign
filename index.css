@@ -1,7 +1,7 @@
 * {
 	font-family: "Exo 2";
 	background-color: rgb(231, 210, 245);
-	font-size: 0.25 vw;
+	/* font-size: 0.25 vw; */
 	color: black;
 	margin-left: 3.5vw;
 	margin-right: 3.5vw;
@@ -13,7 +13,7 @@
 
 h1 {
 	text-align: center;
-	font-size: 2.5vw;
+	font-size: 3vw;
 	padding: 2.5vw;
 	padding-bottom: 0%;
 }
@@ -21,7 +21,7 @@ h1 {
 h2 {
 	text-align: center;
 	padding-top: 10%;
-	font-size: 2vw;
+	font-size: 2.25vw;
 }
 
 .Research {
@@ -31,47 +31,12 @@ h2 {
 
 h3 {
 	padding-top: 2%;
-}
-
-.image1 {
-	width: 45vw;
-	height: 35vh;
-	padding-top: 2vh;
-	margin-left: 3vw;
-	margin-right: 0.01vw;
+	font-size: 2vw;
 }
 
 p {
 	text-align: left;
-	font-size: 135%;
-}
-
-.imagebox2,
-.sketch,
-.image {
-	display: inline-flex;
-	margin-left: 0%;
-	margin-right: 0%;
-}
-
-.imagebox {
-	display: inline-flex;
-	margin-left: 0%;
-	margin-right: 0%;
-	padding-bottom: 10vh;
-}
-
-.text {
-	text-align: left;
-	margin-left: 1px;
-	padding-top: 0%;
-	margin-top: 0%;
-}
-
-.sketchtext {
-	text-align: left;
-	margin-left: 0%;
-	padding-top: 0%;
+	font-size: 1.5vw;
 }
 
 .context {
@@ -80,4 +45,137 @@ p {
 
 .ending {
 	padding-bottom: 15vh;
+}
+
+.wireframe {
+	width: 100%;
+	height: 100%;
+}
+
+.dwf {
+	display: inline-flex;
+	width: 78vw;
+	height: 35vw;
+}
+
+.dimage {
+	display: inline-block;
+	padding-left: 0%;
+	margin-left: 1%;
+	margin-right: 0%;
+}
+
+.dwfi {
+	width: 33vw;
+	height: 75vh;
+	margin-left: 0%;
+}
+
+.dtext {
+	display: inline-block;
+	word-wrap: break-word;
+	width: 53vw;
+	height: 75vh;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+
+.twf {
+	display: inline-flex;
+	width: 78vw;
+	height: 35vw;
+	padding-left: 0%;
+}
+
+.timage {
+	display: inline-block;
+	padding-left: 0%;
+	margin-right: 0%;
+}
+
+.both {
+	width: 30vw;
+	height: 75vh;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+
+.ptext {
+	display: inline-block;
+	word-wrap: break-word;
+	width: 50vw;
+	height: 75vh;
+}
+
+.p {
+	margin: 0%;
+	margin-left: 16vw;
+}
+
+.t {
+	float: right;
+	padding: 0%;
+	margin: 0%;
+	margin-right: 30%;
+	margin-top: 5vw;
+}
+
+.d {
+	float: right;
+	padding: 0%;
+	margin: 0%;
+	margin-right: 30%;
+}
+
+.ttext {
+	width: 35vw;
+	margin-top: 1vw;
+	padding-right: 17vw;
+}
+
+.mini {
+	text-align: left;
+	padding-top: 5vw;
+}
+
+.dhfi {
+	display: inline-block;
+	width: 32vw;
+	height: 47vw;
+	margin: 0%;
+}
+
+.p.text {
+	width: 30vw;
+	height: 20vw;
+	margin-top: 1vw;
+	padding-right: 17vw;
+}
+
+.ddtext {
+	display: inline-block;
+	word-wrap: break-word;
+	width: 53vw;
+	height: 75vh;
+	margin-left: 5%;
+	margin-right: 0%;
+}
+
+.endtext {
+	margin-top: 3vw;
+}
+
+.style-guide {
+	margin: 0%;
+	width: 80vw;
+	height: 48vw;
+}
+
+.final {
+	font-size: 3vw;
+	text-align: center;
+}
+
+.takeaways {
+	padding-top: 5vw;
 }
