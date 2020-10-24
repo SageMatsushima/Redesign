@@ -1,10 +1,26 @@
 * {
 	font-family: "Exo 2";
 	background-color: rgb(231, 210, 245);
-	/* font-size: 0.25 vw; */
 	color: black;
 	margin-left: 3.5vw;
 	margin-right: 3.5vw;
+}
+
+.img {
+	background-color: azure;
+	width: 50vw;
+	height: 30vw;
+}
+
+.graphic {
+	margin-top: 2vw;
+	width: 50vw;
+	height: 30vw;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 50%;
+	left: 20%;
 }
 
 .link {
